@@ -15,11 +15,6 @@ body {
   max-width: 1400px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
 section {
   margin: 0 auto;
   max-width: 1200px;
@@ -110,6 +105,11 @@ footer {
   padding: 80px 20px;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 footer ul {
   list-style-type: none;
   margin: 0;
@@ -122,7 +122,7 @@ footer li {
 }
 
 footer h4 {
-  font-size: 20px;
+  font-size: 14px;
 }
 
 footer h4 a {
@@ -130,13 +130,13 @@ footer h4 a {
 }
 
 footer p {
-  font-size: 20px;
+  font-size: 16px;
   opacity: 0.9;
 }
 
 footer a {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   opacity: 0.9;
   text-decoration: none;
@@ -149,11 +149,19 @@ footer a:hover {
   text-shadow: 0.025em 0.025em 0.025em black;
 }
 
-.apps a {
-  font-size: 16px;
-  font-weight: normal;
-  letter-spacing: 2px;
+.container-apps ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
   margin: 0;
+}
+
+.container-apps li {
+  margin-right: 15px;
+}
+
+.container-apps img {
+  max-height: 40px;
 }
 
 .about-website {
