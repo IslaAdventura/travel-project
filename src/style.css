@@ -1,7 +1,7 @@
 :root {
   --branding-color: #0368d9;
   --secondary-color: white;
-  --tertiary-color: rgb(244, 242, 242);
+  --tertiary-color: rgb(251, 242, 228);
   --default-font-family: "Raleway", serif;
 }
 
@@ -12,8 +12,8 @@ body {
 }
 
 .container {
+  max-width: 100%;
   margin: 0 auto;
-  max-width: 1400px;
 }
 
 .grid-2-columns {
@@ -30,9 +30,36 @@ body {
 
 .grid-3-columns {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 20px;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 20px 20px;
+}
+
+.grid-4-columns-photos {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 5px;
+  padding: 20px 20px;
+}
+
+.grid-4-columns-photos img {
+  max-width: 100%;
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+  margin: 10px;
+}
+
+.grid-4-columns-photos img:hover {
+  transform: scale(1.5) translate(70px);
+  transition: all 500ms ease-in-out;
+}
+
+.grid-4-columns-photos-right-side img:hover {
+  transform: scale(1.5) translate(-70px);
+  transition: all 500ms ease-in-out;
 }
 
 section {
@@ -154,8 +181,14 @@ main p {
   max-width: 100%; /* Make image responsive */
   width: 300px;
   height: 275px;
+  border-radius: 5px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
   margin: 10px;
+}
+
+.main-img:hover {
+  transform: scale(1.5) translate(70px);
+  transition: all 250ms ease-in-out;
 }
 
 .text-center {
@@ -164,8 +197,6 @@ main p {
 
 section.secondary {
   background-color: var(--tertiary-color);
-  margin-bottom: 30px;
-  padding: 50px 20px;
 }
 
 section.secondary h2,
@@ -205,17 +236,16 @@ section.secondary h3 {
   font-size: 24px;
   font-weight: 700;
   line-height: 1;
-  margin: 0 -5px;
+  margin: 0 10px;
   text-shadow: 5px 5px 20px rgb(105, 48, 0);
 }
 
 .card h5 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1;
-  margin: 0;
-  opacity: 0.7;
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 3), 5px 5px 20px rgb(105, 48, 0);
+  margin-bottom: 5px;
+  margin-top: 40px;
 }
 
 .card-btn {
@@ -399,5 +429,10 @@ footer a:hover {
 
   .embed {
     aspect-ratio: 16/9;
+  }
+
+  .grid-4-columns-photos img:hover {
+    transform: none;
+    transition: none;
   }
 }
