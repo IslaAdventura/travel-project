@@ -179,7 +179,7 @@ main p {
 
 .main-img {
   max-width: 100%; /* Make image responsive */
-  width: 300px;
+  width: 275px;
   height: 275px;
   border-radius: 5px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
@@ -202,6 +202,18 @@ section.secondary {
 section.secondary h2,
 section.secondary h3 {
   color: black;
+}
+
+section.secondary a {
+  color: black;
+  font-size: 24px;
+  font-weight: 900;
+  text-decoration: none;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 3), 5px 5px 20px rgb(105, 48, 0);
+}
+
+section.secondary a:hover {
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 3), 5px 5px 20px var(--branding-color);
 }
 
 .card {
@@ -264,7 +276,7 @@ section.secondary h3 {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
   color: #000;
   display: inline-block;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 600;
   margin: 0;
   outline: none;
@@ -323,7 +335,6 @@ footer a {
   color: var(--secondary-color);
   font-size: 14px;
   font-weight: 600;
-
   text-decoration: none;
   text-shadow: 0.035em 0.035em 0.035em var(--branding-color);
 }
@@ -429,6 +440,15 @@ footer a:hover {
 
   .embed {
     aspect-ratio: 16/9;
+  }
+
+  .main-img:hover {
+    transform: none;
+    transition: none;
+  }
+
+  .grid-4-columns-photos img {
+    text-align: center;
   }
 
   .grid-4-columns-photos img:hover {
