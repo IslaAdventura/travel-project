@@ -1,7 +1,7 @@
 :root {
-  --branding-color: rgb(224, 223, 223);
+  --branding-color: rgb(237, 235, 235);
   --secondary-color: white;
-  --tertiary-color: white;
+  --tertiary-color: #0368d9;
   --default-font-family: "Raleway", serif;
 }
 
@@ -136,7 +136,7 @@ header a {
 }
 
 header a:hover {
-  box-shadow: 5px 5px 10px var(--branding-color);
+  box-shadow: 5px 5px 10px var(--secondary-color);
   color: black;
   font-weight: 600;
   transform: translateY(-2px);
@@ -192,7 +192,7 @@ main p {
 }
 
 section.secondary {
-  background-color: var(--tertiary-color);
+  background-color: var(--secondary-color);
 }
 
 section.secondary h2,
@@ -208,6 +208,7 @@ section.secondary h3 {
 }
 
 .hotels-link:hover {
+  font-size: 28px;
   text-decoration: underline;
 }
 
@@ -339,6 +340,7 @@ footer a {
 footer a:hover {
   color: var(--secondary-color);
   border-radius: 50px;
+  font-size: 16px;
   font-weight: 500;
   text-decoration: underline;
 }
@@ -378,11 +380,10 @@ footer a:hover {
 }
 
 .about-website a {
-  color: white;
-  font-size: 16px;
-  font-weight: 500;
+  color: var(--tertiary-color);
+  font-size: 18px;
+  font-weight: 700;
   text-decoration: none;
-  text-shadow: 3px 5px 2px rgb(47, 20, 20);
 }
 
 .about-website a:hover {
