@@ -76,7 +76,7 @@ header {
 }
 
 header h1 {
-  color: var(--branding-color);
+  color: white;
   font-family: var(--default-font-family);
   font-size: 76px;
   font-style: normal;
@@ -205,7 +205,6 @@ section.secondary h3 {
   font-size: 26px;
   font-weight: 700;
   text-decoration: dotted;
-  text-shadow: 1px 1px 3px rgb(105, 48, 0);
 }
 
 .hotels-link:hover {
@@ -213,9 +212,11 @@ section.secondary h3 {
 }
 
 .card {
-  background-color: black;
+  background-color: var(--branding-color);
   margin: 30px 0;
   padding: 10px 10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
 }
 
 .card-header.grid {
@@ -224,7 +225,6 @@ section.secondary h3 {
 
 .card-header img {
   display: block;
-
   height: 200px;
   width: 200px;
 }
@@ -241,14 +241,15 @@ section.secondary h3 {
 }
 
 .card h4 {
+  color: black;
   font-size: 24px;
   font-weight: 700;
   line-height: 1;
-  margin: 0 10px;
-  text-shadow: 5px 5px 20px rgb(105, 48, 0);
+  margin: 2px 5px;
 }
 
 .card h5 {
+  color: black;
   font-size: 20px;
   font-weight: 700;
   line-height: 1;
@@ -285,9 +286,10 @@ section.secondary h3 {
 
 .card-btn:hover {
   box-shadow: 5px 5px 10px var(--branding-color);
-  color: var(--branding-color);
+  color: black;
   font-weight: 600;
-  text-shadow: 0.05em 0.05em 0.05em black;
+  text-decoration: underline;
+  text-shadow: 0.05em 0.05em 0.05em white;
   transform: translateY(-2px);
 }
 
@@ -313,7 +315,7 @@ footer li {
 }
 
 footer h4 {
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+  color: white;
   font-size: 16px;
   opacity: 0.8;
 }
@@ -332,15 +334,13 @@ footer a {
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
-  text-shadow: 0.035em 0.035em 0.035em var(--branding-color);
 }
 
 footer a:hover {
   color: var(--secondary-color);
   border-radius: 50px;
   font-weight: 500;
-  text-shadow: 0.025em 0.025em 0.025em black;
-  box-shadow: 5px 5px 10px var(--branding-color);
+  text-decoration: underline;
 }
 
 .container-apps ul {
@@ -378,17 +378,17 @@ footer a:hover {
 }
 
 .about-website a {
-  color: var(--secondary-color);
+  color: white;
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
-  text-shadow: 3px 5px 2px var(--branding-color);
+  text-shadow: 3px 5px 2px rgb(47, 20, 20);
 }
 
 .about-website a:hover {
-  color: var(--branding-color);
-  font-weight: 500;
-  text-shadow: 0.05em 0.05em 0.05em var(--secondary-color);
+  color: white;
+  font-weight: 700;
+  text-decoration: underline;
 }
 .about-website p {
   font-weight: 500px;
