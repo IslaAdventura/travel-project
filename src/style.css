@@ -1,7 +1,7 @@
 :root {
-  --branding-color: #0368d9;
+  --branding-color: rgb(224, 223, 223);
   --secondary-color: white;
-  --tertiary-color: rgb(251, 242, 228);
+  --tertiary-color: white;
   --default-font-family: "Raleway", serif;
 }
 
@@ -54,13 +54,7 @@ body {
 }
 
 .grid-4-columns-photos img:hover {
-  transform: scale(1.5) translate(70px);
-  transition: all 500ms ease-in-out;
-}
-
-.grid-4-columns-photos-right-side img:hover {
-  transform: scale(1.5) translate(-70px);
-  transition: all 500ms ease-in-out;
+  box-shadow: 5px 5px 10px white;
 }
 
 section {
@@ -130,11 +124,11 @@ header a {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
   color: #000;
   display: inline-block;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   margin: 0;
   outline: none;
-  padding: 10px 25px;
+  padding: 12px 24px;
   text-shadow: 1px 1px 2px var(--secondary-color);
   text-decoration: none;
   transition: all 0.2s ease-in-out;
@@ -143,9 +137,8 @@ header a {
 
 header a:hover {
   box-shadow: 5px 5px 10px var(--branding-color);
-  color: var(--branding-color);
+  color: black;
   font-weight: 600;
-  text-shadow: 0.05em 0.05em 0.05em black;
   transform: translateY(-2px);
 }
 
@@ -154,30 +147,31 @@ main {
 }
 
 main h2 {
-  color: white;
+  color: black;
   font-weight: 800;
   font-size: 14px;
   letter-spacing: 5px;
   line-height: 1.5;
   margin: 0;
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8), 5px 5px 20px rgb(105, 48, 0);
+
   text-transform: uppercase;
 }
 
 main h3 {
-  color: white;
+  color: black;
   font-weight: 500;
   font-size: 25px;
   line-height: 1.5;
   margin: 0;
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8), 5px 5px 20px rgb(105, 48, 0);
+  text-shadow: 5px 5px 20px white;
 }
 
 main p {
+  color: black;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+  text-shadow: 5px 5px 10px white;
 }
 
 .main-img {
@@ -190,8 +184,7 @@ main p {
 }
 
 .main-img:hover {
-  transform: scale(1.5) translate(70px);
-  transition: all 250ms ease-in-out;
+  box-shadow: 5px 5px 10px white;
 }
 
 .text-center {
@@ -211,12 +204,12 @@ section.secondary h3 {
   color: black;
   font-size: 26px;
   font-weight: 700;
-  text-decoration: none;
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 3), 5px 5px 20px rgb(105, 48, 0);
+  text-decoration: dotted;
+  text-shadow: 1px 1px 3px rgb(105, 48, 0);
 }
 
 .hotels-link:hover {
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 3), 5px 5px 10px var(--branding-color);
+  text-decoration: underline;
 }
 
 .card {
